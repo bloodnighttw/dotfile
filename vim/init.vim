@@ -29,14 +29,17 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'preservim/nerdtree'
 Plugin 'mhinz/vim-startify'
 Plugin 'christoomey/vim-system-copy'
+" or Plug 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 Plugin 'doums/darcula'
-
+Plugin 'leafgarland/typescript-vim'
 " You can install your plugin here
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 
 let g:system_copy#copy_command='xclip -sel clipboard'
 
