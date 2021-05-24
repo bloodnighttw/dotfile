@@ -1,0 +1,96 @@
+
+
+pe/vim-fugitive'
+
+Plugin 'git://git.wincent.com/command-t.git'
+
+" Vundle
+
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+
+Plugin 'vim-airline/vim-airline'
+
+" Plugin 'vim-airline/vim-airline-themes'
+
+
+
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'myusuf3/numbers.vim'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+Plugin 'andymass/vim-matchup'
+
+Plugin 'bling/vim-bufferline'
+
+Plugin 'ryanoasis/vim-devicons'
+
+Plugin 'preservim/nerdtree'
+
+Plugin 'mhinz/vim-startify'
+
+Plugin 'christoomey/vim-system-copy'
+
+" or Plug 'leafgarland/typescript-vim'
+
+Plugin 'peitalin/vim-jsx-typescript'
+
+
+
+Plugin 'doums/darcula'
+
+Plugin 'leafgarland/typescript-vim'
+
+" You can install your plugin here
+
+Plugin 'Shougo/denite.nvim'
+
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'git://git.wincent.com/command-t.git'
+
+" Vundle
+
+Plugin 'neoclide/coc.nvim', {'branch': 'release'
+
+Plugin 'vim-airline/vim-airline'
+
+" Plugin 'vim-airline/vim-airline-themes'
+
+
+
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'myusuf3/numbers.vim'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+Plugin 'andymass/vim-matchup'
+
+Plugin 'bling/vim-bufferline'
+
+Plugin 'ryanoasis/vim-devicons'
+
+Plugin 'preservim/nerdtree'
+
+Plugin 'mhinz/vim-startify'
+
+Plugin 'christoomey/vim-system-copy'
+
+" or Plug 'leafgarland/typescript-vim'
+
+Plugin 'peitalin/vim-jsx-typescript'
+
+
+
+Plugin 'doums/darcula'
+
+Plugin 'leafgarland/typescript-vim'
+
+" You can install your plugin here
+
+Plugin 'Shougo/denite.nvim
