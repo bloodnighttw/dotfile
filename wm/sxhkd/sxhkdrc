@@ -38,7 +38,7 @@ alt + shift + {Left,Down,Up,Right}
 
 # Rofi Power Menu
 super + e
-	rofi -show powermenu -modi powermenu:~/dotfile/script/powermenu
+	rofi -show powermenu -modi powermenu:~/.script/powermenu
 
 # Increase volume
 XF86AudioRaiseVolume
