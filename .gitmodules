@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "submodule/tdrop"]
+	path = submodule/tdrop
+	url = https://github.com/noctuid/tdrop.git
