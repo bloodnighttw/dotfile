@@ -14,22 +14,13 @@ super + Tab
 super + {_,shift + }q
 	bspc node -{c,k}
     
-
+# Swtich floating state <--> tiled state
 super + @space
-    if [ -z "$(bspc query -N -n focused.floating)" ]; then \                    
-        bspc node focused -t floating; \                                        
-    else \                                                                      
-        bspc node focused -t tiled; \                                           
-    fi
+    ~/.script/wm/sw_floating
 
-
+# Swtich fullscreen state <--> tiled state
 super + f
-    if [ -z "$(bspc query -N -n focused.fullscreen)" ]; then \                    
-        bspc node focused -t fullscreen; \                                        
-    else \                                                                      
-        bspc node focused -t tiled; \                                           
-    fi
-
+    ~/.script/wm/sw_fullscreen
 
 # Switch workspace
 super + {Left,Right}
