@@ -7,7 +7,7 @@ super + d
 	rofi -show drun
 
 # Rofi Windows select
-alt + Tab
+super + Tab
 	rofi -show window -no-sort -window-command "bspc node {window} -d focused" 
 
 # close and kill
