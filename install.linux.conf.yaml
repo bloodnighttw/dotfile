@@ -8,6 +8,7 @@
     ~/.config/sxhkd/: wm/sxhkd
     ~/.config/bspwm/: wm/bspwm
     ~/.config/polybar/: wm/polybar
+    ~/.script/: script
 
 - create:
     - ~/Programing

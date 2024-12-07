@@ -34,7 +34,7 @@ else
 fi
 
 if [ "$1" == "--status" ]; then
-    echo "$STATUS"
+    echo "$1TATUS"
 else
     if [ "$STATUS" = "Stopped" ]; then
         echo "No music is playing"
