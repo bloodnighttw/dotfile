@@ -1,0 +1,73 @@
+# Open Terminal (alacritty)
+super + Return
+	kitty
+
+# Rofi Dmenu menu
+super + d
+	rofi -show drun
+
+# Rofi Windows select
+alt + Tab
+	rofi -show window -no-sort -window-command "bspc node {window} -d focused" 
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# set the window state
+super + { t,p,@space,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Switch workspace
+super + {Left,Right}
+	bspc desktop -f {prev,next}.local
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+# Expand window size by keyboard
+alt + {Left,Down,Up,Right}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Shrink window size by keyboard
+alt + shift + {Left,Down,Up,Right}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+
+# Rofi Power Menu
+super + e
+	rofi -show powermenu -modi powermenu:~/dotfile/script/powermenu
+
+# Increase volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+ 1>/dev/null
+
+# Decrease volume
+XF86AudioLowerVolume
+    amixer set Master 10%- 1>/dev/null
+
+# Mute Audio
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle 1>/dev/null
+
+# Play
+XF86AudioPlay
+    playerctl play-pause
+
+# Next
+XF86AudioNext
+    playerctl next
+
+# Previous
+XF86AudioPrev
+    playerctl previous
+
+# Stop
+XF86AudioStop
+    playerctl stop
+
+# Screen shot
+super + shift + s
+	gnome-screenshot

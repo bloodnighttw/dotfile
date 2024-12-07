@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config: vim
+    ~/.vimrc: vimrc
+
+- create:
+    - ~/Programing
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

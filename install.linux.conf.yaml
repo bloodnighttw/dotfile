@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/sxhkd/: wm/sxhkd
+    ~/.config/bspwm/: wm/bspwm
+    ~/.config/polybar/: wm/polybar
+
+- create:
+    - ~/Programing
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
