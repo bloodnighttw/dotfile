@@ -14,10 +14,14 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Edge desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a Cinnamon-settings.py state=floating
+bspc rule -a "cinnamon-settings network" state=floating
+bspc rule -a zen-alpha desktop='^1'
+bspc rule -a Spotify desktop='^7'
+bspc rule -a discord desktop='^8'
+bspc rule -a Code desktop='^2'
+
+# Run flatpak package
+flatpak run com.spotify.Client &
 
 
