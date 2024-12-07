@@ -24,4 +24,4 @@ pgreq -x cinnamon-session > /dev/null || cinnamon-session &
 ```
 
 ## LICENCE
-Since we use rasi theme from  [lr-tech/rofi-themes-collection]( https://github.com/lr-tech/rofi-themes-collection), these dotfile in public under GPLv3.
+Since we use rasi theme from  [rofi-themes-collection]( https://github.com/lr-tech/rofi-themes-collection), these dotfile in public under GPLv3.
