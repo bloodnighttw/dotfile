@@ -13,10 +13,23 @@ alt + Tab
 # close and kill
 super + {_,shift + }q
 	bspc node -{c,k}
+    
 
-# set the window state
-super + { t,p,@space,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + @space
+    if [ -z "$(bspc query -N -n focused.floating)" ]; then \                    
+        bspc node focused -t floating; \                                        
+    else \                                                                      
+        bspc node focused -t tiled; \                                           
+    fi
+
+
+super + f
+    if [ -z "$(bspc query -N -n focused.fullscreen)" ]; then \                    
+        bspc node focused -t fullscreen; \                                        
+    else \                                                                      
+        bspc node focused -t tiled; \                                           
+    fi
+
 
 # Switch workspace
 super + {Left,Right}
