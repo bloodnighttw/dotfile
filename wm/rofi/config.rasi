@@ -1,0 +1,15 @@
+//@theme "/home/bntw/.local/share/rofi/themes/spotlight-dark.rasi"
+@theme "/home/bntw/.script/rofi/spotlight-dark.rasi"
+
+configuration {
+  show-icons:         true;
+  modes: "window,drun,run,windowcd";
+    /* Disable MousePrimary as an entry selector */
+  /* Without this setting you won't be able to set MousePrimary as an entry
+     acceptor. */
+  me-select-entry: "";
+
+  /* Use either LMB single click or RMB single click or LMB double click
+     to accept an entry */
+  me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];	
+}

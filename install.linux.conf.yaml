@@ -8,6 +8,8 @@
     ~/.config/sxhkd/: wm/sxhkd
     ~/.config/bspwm/: wm/bspwm
     ~/.config/polybar/: wm/polybar
+    ~/.config/dunst/: wm/dunst
+    ~/.config/rofi/: wm/rofi
     ~/.script/: script
 
 - create:
