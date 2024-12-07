@@ -22,3 +22,6 @@ The dotfile mean to run on Linux Mint 22 Cinnamon Edtion, but if you want to run
 pgreq -x cinnamon-session > /dev/null || cinnamon-session &
 ...
 ```
+
+## LICENCE
+Since we use rasi theme from  [lr-tech/rofi-themes-collection]( https://github.com/lr-tech/rofi-themes-collection), these dotfile in public under GPLv3.
