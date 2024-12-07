@@ -4,6 +4,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.script
+
 - link:
     ~/.config/sxhkd/: wm/sxhkd
     ~/.config/bspwm/: wm/bspwm
@@ -14,8 +17,7 @@
     ~/.script/: script
     ~/.script/tdrop: submodule/tdrop/tdrop 
 
-- create:
-    - ~/Programing
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -5,11 +5,12 @@
 - clean: ['~']
 
 - link:
-    ~/.config: vim
-    ~/.vimrc: vimrc
+    ~/.config/kitty: config/kitty
+    ~/.config/fish: config/fish
 
 - create:
     - ~/Programing
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
