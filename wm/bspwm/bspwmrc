@@ -2,7 +2,6 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgreq -x picom > /dev/null || picom &
-pgreq -x cinnamon-session > /dev/null || cinnamon-session &
 pgreq -x polybar > /dev/null || polybar &
 
 bspc monitor -d 󰇩 󰨞 󰨞 󰨞 󰨞  󰓇  󰍻
