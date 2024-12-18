@@ -6,6 +6,7 @@
 
 - create:
     - ~/.config
+    - ~/.bin
 
 - link:
     ~/.config/sxhkd/: wm/sxhkd
@@ -15,7 +16,7 @@
     ~/.config/rofi/: wm/rofi
     ~/.config/picom/: wm/picom
     ~/.script/: script/
-    ~/.script/tdrop: submodule/tdrop/tdrop 
+    ~/.bin/tdrop: submodule/tdrop/tdrop 
 
 
 - shell:

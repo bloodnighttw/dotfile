@@ -11,7 +11,7 @@ super + Tab
 	rofi -show window -no-sort -window-command "bspc node {window} -d focused" 
 
 alt + Tab
-    ~/.script/tdrop kitty --name hotkey zellij attach hotkey --create
+    ~/.bin/tdrop kitty --name hotkey zellij attach hotkey --create
 
 # close and kill
 super + {_,shift + }q
