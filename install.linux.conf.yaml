@@ -16,7 +16,8 @@
     ~/.config/rofi/: wm/rofi
     ~/.config/picom/: wm/picom
     ~/.script/: script/
-    ~/.bin/tdrop: submodule/tdrop/tdrop 
+    ~/.bin/tdrop: submodule/tdrop/tdrop
+    ~/.wallpaper/: wallpaper/
 
 
 - shell:

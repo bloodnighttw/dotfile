@@ -25,4 +25,5 @@ bspc rule -a kitty:hotkey state=floating
 # Run flatpak package
 flatpak run com.spotify.Client &
 
-
+# Wallpaper 
+feh --bg-scale ~/.wallpaper/sakura.JPG
