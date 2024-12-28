@@ -82,7 +82,7 @@
       source = config.lib.file.mkOutOfStoreSymlink ../config/kitty;
     };
 
-    ".xinitrc" = {
+    ".config/.xinitrc" = {
       source = config.lib.file.mkOutOfStoreSymlink .xinitrc;
     };
 
