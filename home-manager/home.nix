@@ -82,6 +82,10 @@
       source = config.lib.file.mkOutOfStoreSymlink ../config/kitty;
     };
 
+    ".xinitrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink .xinitrc;
+    };
+
   };
 
   # Home Manager can also manage your environment variables through
