@@ -49,16 +49,39 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
+    
+    ".script" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../script;
+    };
 
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+    ".config/bspwm" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/bspwm;
+    };
+
+    ".config/sxhkd" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/sxhkd;
+    };
+
+    ".config/picom" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/picom;
+    };
+
+    ".config/dunst" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/dunst;
+    };
+
+    ".config/polybar" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/polybar;
+    };
+
+    ".config/rofi" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/rofi;
+    };
+
+    ".config/kitty" = {
+      source = config.lib.file.mkOutOfStoreSymlink ../config/kitty;
+    };
+
   };
 
   # Home Manager can also manage your environment variables through
