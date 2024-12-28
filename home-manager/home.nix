@@ -28,6 +28,15 @@
     pkgs.vscode-fhs
     pkgs.tdrop
     pkgs.zellij
+    pkgs.neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    pkgs.wget
+    pkgs.curl
+    pkgs.picom
+    pkgs.sxhkd
+    pkgs.polybarFull
+    pkgs.rofi
+    pkgs.playerctl
+    pkgs.feh
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
