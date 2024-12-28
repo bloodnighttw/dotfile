@@ -25,7 +25,7 @@
     pkgs.gh
     pkgs.lxappearance
     pkgs.jetbrains-toolbox
-    pkgs.vscode
+    pkgs.vscode-fhs
     pkgs.tdrop
 
     # # Adds the 'hello' command to your environment. It prints a friendly
