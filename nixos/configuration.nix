@@ -235,6 +235,23 @@
    ];
   };
 
+  programs.bash = {
+    interactiveShellInit = ''
+      # if we're in tty, we won't launch fish
+      if [[ $TERM == "linux" ]]; then
+        # we use tty1 to launch x11
+	if [[ $(tty) == /dev/tty1 ]]; then
+          startx
+        fi
+      else
+        # If not in TTY, start fish shell
+        exec fish
+      fi
+    '';
+  };
+
+  programs.fish.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
