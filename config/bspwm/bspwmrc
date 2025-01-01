@@ -30,3 +30,4 @@ flatpak run com.spotify.Client &
 
 # Wallpaper 
 feh --bg-scale ~/.wallpaper/sakura.JPG
+xsetroot -cursor_name left_ptr

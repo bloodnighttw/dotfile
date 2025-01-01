@@ -245,7 +245,9 @@
         fi
       else
         # If not in TTY, start fish shell
-        exec fish
+	if [[ $(tty) == /dev/pts/* ]]; then
+          exec fish
+	fi
       fi
     '';
   };
