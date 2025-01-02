@@ -99,6 +99,10 @@
   environment.systemPackages = with pkgs; [
     home-manager
     libappindicator
+    fishPlugins.tide
+    fishPlugins.sponge
+    zoxide
+    fzf
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -236,23 +240,20 @@
   };
 
   programs.bash = {
-    interactiveShellInit = ''
-      # if we're in tty, we won't launch fish
-      if [[ $TERM == "linux" ]]; then
-        # we use tty1 to launch x11
-	if [[ $(tty) == /dev/tty1 ]]; then
-          startx
-        fi
-      else
-        # If not in TTY, start fish shell
-	if [[ $(tty) == /dev/pts/* ]]; then
-          exec fish
-	fi
-      fi
+    interactiveShellInit = ''  
+    # we use tty1 to launch x11
+    if [[ $(tty) == /dev/tty1 ]]; then
+      startx
+    fi
     '';
   };
 
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      zoxide init fish | source
+    '';
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

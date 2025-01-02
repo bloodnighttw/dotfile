@@ -143,6 +143,12 @@
     };
   };
 
+  programs.fish = {
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
