@@ -97,19 +97,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    curl
-    git
-    picom
-    sxhkd
-    polybar
-    rofi
-    playerctl
-    feh
     home-manager
-    lxappearance
     libappindicator
+    fishPlugins.tide
+    fishPlugins.sponge
+    zoxide
+    fzf
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -244,6 +237,22 @@
      xz
      zlib
    ];
+  };
+
+  programs.bash = {
+    interactiveShellInit = ''  
+    # we use tty1 to launch x11
+    if [[ $(tty) == /dev/tty1 ]]; then
+      startx
+    fi
+    '';
+  };
+
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      zoxide init fish | source
+    '';
   };
 
   # Open ports in the firewall.

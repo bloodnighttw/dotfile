@@ -1,27 +1,21 @@
 # dotfiles
 
-These dotfiles use dotbot to manage, but you don't need to installed it since we include it as a git sub module.
+These file contain config on my nixos system.
 
-This dotfiles include three part
+Installation
 
-1.  Dotfile on Linux Mint 22 Cinnamon Edition
-2.  Dotfile on macOS
-3.  Dotfile on BOTH.
-
-The script should determine os automatically, just run
 ```bash
-./install
+./system.sh
 ```
-and it will link the dotfile to its place.
+to install system package and settings.
 
-## IMPORTANT NOTE:
-The dotfile mean to run on Linux Mint 22 Cinnamon Edtion, but if you want to run on other distro, you need to edit bspwm file and remove this line.
+and
 
-```bashrc
-...
-pgreq -x cinnamon-session > /dev/null || cinnamon-session &
-...
+```bash
+./home.sh
 ```
+
+to install home package and settings.
 
 ## LICENCE
 Since we use rasi theme from  [rofi-themes-collection]( https://github.com/lr-tech/rofi-themes-collection), these dotfile in public under GPLv3.

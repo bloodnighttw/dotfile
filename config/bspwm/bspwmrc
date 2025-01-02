@@ -1,8 +1,11 @@
 #! /bin/sh
 
+xsetroot -cursor_name left_ptr &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgreq -x picom > /dev/null || picom &
 pgreq -x polybar > /dev/null || polybar &
+pgreq -x fcitx5 > /dev/null || fcitx5 &
 
 bspc monitor -d 󰇩 󰨞 󰨞 󰨞 󰨞  󰓇  󰍻
 
@@ -27,3 +30,4 @@ flatpak run com.spotify.Client &
 
 # Wallpaper 
 feh --bg-scale ~/.wallpaper/sakura.JPG
+xsetroot -cursor_name left_ptr
